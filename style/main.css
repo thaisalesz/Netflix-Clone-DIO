@@ -1,0 +1,90 @@
+:root{
+    --vermelho: #e50914;
+    --preta:#141414;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--preta);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+        
+}
+.logo-principal{
+    margin-left: 5px;
+    color: red;
+    font-family: 'Arial Black', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+}
+header nav{
+    display: flex;
+    right: 0;
+    top: 15px;
+}
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+header nav a:hover{
+    color: #fff;
+}
+/*filme principal*/
+.filme-principal{
+    width: 100%;
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/cover.jpg');
+    height: 400px;
+    background-size:cover;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+
+}
+h3 {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    margin-right: 15px;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.botao:hover{
+    background-color: white;
+    color: black;
+    transition: .5s ease all;
+}
+.botao i{
+    margin-right: 8px;
+}
+.container{
+    margin-left: 20px;
+}
+.filme-principal .container{
+    width: 70%;
+}
