@@ -1,6 +1,9 @@
 :root{
-    --vermelho: #e50914;
-    --preta:#141414;
+    --ciano: #a6effff2;
+    --branco: #C1C8e4;
+    --azul: #5680e9;
+    --azul-claro: #5ab9ea;
+    --lilas:#8860d0;
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
@@ -10,23 +13,27 @@
     box-sizing: border-box;
 }
 body{
-    background-color: var(--preta);
+    background: linear-gradient(0deg,rgba(0,0,0,.1),rgba(0,0,0,.1)),linear-gradient(90deg,#9f79f3,#a7e8ec);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: white;
+    color: var(--branco);
 }
 header .container{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-        
+    background: linear-gradient(0deg,rgba(0,0,0,.1),rgba(0,0,0,.1)),linear-gradient(90deg,#9f79f3,#a7e8ec);
+    box-shadow: 0 8px 24px rgb(0 0 0 / 30%);   
+    border-radius: 0 0 2px 2px;
+    padding: 10px;
 }
 .logo-principal{
-    margin-left: 5px;
-    color: red;
-    font-family: 'Arial Black', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 15px;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 40px;
     font-weight: bolder;
+    text-transform: uppercase;
 }
 header nav{
     display: flex;
@@ -35,23 +42,29 @@ header nav{
 }
 header nav a{
     text-decoration: none;
-    color: #AAA;
+    color: white;
     margin-right: 10px;
+    padding: 10px;
+    font-weight: 500;
 }
 header nav a:hover{
-    color: #fff;
+    background: white;
+    border-radius: 8px;
+    color: #8860d0;
 }
 /*filme principal*/
 .filme-principal{
     width: 100%;
     font-size: 16px;
     background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/cover.jpg');
-    height: 400px;
+    height: 500px;
     background-size:cover;    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    margin-bottom: 8px;
+    border-radius: 8px;
 }
 .descricao{
     margin-top: 10px;
@@ -83,8 +96,42 @@ h3 {
     margin-right: 8px;
 }
 .container{
-    margin-left: 20px;
+    padding-inline-start: 20px;
+    
 }
 .filme-principal .container{
     width: 70%;
+}
+.line-break{
+    color: whitesmoke;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    text-align: center;    
+    padding: 10px;
+}
+
+footer{
+    
+    text-align: center;
+    padding: 10px;
+    background: var(--branco);
+    color: #8860d0;
+    font-weight: 400;
+    border-radius: 8px;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+footer a:hover{
+    color: #8860d0;
+    background-color: var(--branco);
+    border-radius: 8px;
+
+}
+.item img{
+    border-radius: 5px;
+    height: 450px;;
 }
